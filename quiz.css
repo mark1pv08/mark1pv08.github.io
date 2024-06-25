@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #3629ee;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_principal, .menu_principal, .pergunta_principal, .resultado_principal {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.texto_principal:hover, .menu_principal:hover, .pergunta_principal:hover, .rodape:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.titulo, .titulo_pergunta, .titulo_resultado {
+    margin-bottom: 20px;
+    font-size: 55px;
+    color: #0600b4;
+}
+
+.sub_titulo {
+    display: block;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.botao_jogar, .botao_pergunta, .opcao, .botao_voltar {
+    background-color: #0600b4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+.botao_jogar:hover, .botao_pergunta:hover, .opcao:hover, .botao_voltar:hover {
+    background-color: #08064a;
+    transform: scale(1.1);
+}
+
+.lista_perguntas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista_perguntas li {
+    margin-bottom: 10px;
+}
+
+.pergunta_texto {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.feedback {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.questao-box {
+    flex: 1 1 300px;
+    border: 2px solid #0600b4;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+.questao-box p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.resultado-box {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.resultado-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resultado-box .questao {
+    margin-top: 10px;
+}
+
+.resposta-correta {
+    border-color: green;
+}
+
+.resposta-incorreta {
+    border-color: red;
+}
+
+.botao_verde {
+    background-color: green !important;
+}
+
+.rodape {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rodape p {
+    margin: 0;
+    font-size: 18px;
+    color: #0600b4;
+}
